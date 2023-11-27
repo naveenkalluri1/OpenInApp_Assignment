@@ -70,7 +70,7 @@ async function sendAutoReply(auth, message) {
             `Subject: Re: ${message.payload.headers.find(header => header.name === 'Subject').value}\r\n` +
             `Content-Type: text/plain; charset="UTF-8"\r\n` +
             `Content-Transfer-Encoding: 7bit\r\n\r\n` +
-            `Thank you for your email. I'm currently on vacation and will reply to you when I return.\r\n`
+            `I'm currently on vacation and will reply to you when I return. Thank you for your email.\r\n`
         ).toString('base64'),
       },
     };
